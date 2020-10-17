@@ -28,9 +28,6 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-#Make errors better
-gem 'better_errors', '~> 2.1', '>= 2.1.1'
-
 #For Css
 gem 'bulma-rails', '~> 0.9.0'
 
@@ -52,7 +49,10 @@ group :development do
   # Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.16', '>= 2.16.2'
   #Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+#Make errors better
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
 end
 
 group :test do
